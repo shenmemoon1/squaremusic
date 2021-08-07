@@ -1,0 +1,156 @@
+.content {
+    .left {
+        ul {
+            border-right: rgba(235, 227, 227, .4) 1px solid;
+            list-style: none;
+            padding-left: 0;
+            color: #fff;
+
+            // position: relative ;
+            li {
+                padding: 10px 5px;
+                background-color: transparent;
+
+                &:nth-child(odd) {
+                    background-color: rgba(235, 227, 227, .4);
+                }
+            }
+        }
+    }
+
+    .music-img {
+        display: flex;
+        justify-content: center;
+
+        // position:relative;
+        // overflow: hidden;
+        .img-1,
+        .img-2 {
+            position: absolute;
+
+        }
+
+        .img-1 {
+            width: 650px;
+            height: 650px;
+        }
+
+        .img-2 {
+            height: 250px;
+            width: 250px;
+            transform: translate(-1%, 78%);
+            border-radius: 50%;
+            // display: none;
+        }
+
+    }
+
+    .right {
+
+        // background-color: rgba(235, 227, 227, .4);
+        ul {
+            list-style: none;
+
+            li {
+                border-bottom: 1px solid #999;
+                margin-top: 5px;
+
+                img {
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+
+                }
+            }
+        }
+    }
+}
+
+.video{
+    position: absolute;
+    top: -600px;
+    left: 25%;
+    width: 800px !important;
+    height: 400px !important;
+    z-index: 1;
+}
+.player {
+    position: fixed;
+    bottom: 0;
+    height: 60px;
+
+    .audio_con {
+        .myaudio {
+            height: 60px;
+            outline: none;
+            background-color: #f1f3f4;
+        }
+    }
+}
+
+
+@media screen and (max-width: 542px) {
+    .content {
+        .music-img {
+            height: 350px !important;
+
+            .img-1 {
+                width: 350px;
+                height: 350px;
+            }
+
+            .img-2 {
+                height: 150px;
+                width: 150px;
+                transform: translate(0%, 65%);
+
+            }
+        }
+
+        // .right{
+        //     min-height: 200px;
+        // }
+    }
+
+    .video{
+        position: absolute;
+        top: -600px;
+        left: 0%;
+        width: 400px !important;
+        height: 200px !important;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .content {
+        .music-img {
+            height: 500px !important;
+
+
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 1024px) {
+    .content {
+        .music-img {
+            .img-1 {
+                width: 350px;
+                height: 350px;
+            }
+
+            .img-2 {
+                height: 150px;
+                width: 150px;
+                transform: translate(0%, 65%);
+
+            }
+
+
+        }
+
+    }
+}
